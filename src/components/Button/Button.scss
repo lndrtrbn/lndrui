@@ -11,12 +11,12 @@
     background-color: var(--accent);
   }
   &:active {
-    box-shadow: inset 0px 0px 0px 6px var(--o20);
+    box-shadow: inset 0px 0px 0px 50px var(--o10);
   }
 }
 
 .lndrui__btn--transparent {
-  background-color: var(--o10);
+  background-color: var(--o05);
 
   &:hover {
     background-color: var(--o20);

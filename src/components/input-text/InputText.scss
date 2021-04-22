@@ -1,0 +1,20 @@
+.lndrui__input {
+  border: 2px solid var(--primary);
+  outline: none;
+  padding: 10px 20px;
+  transition: all 0.2s ease;
+
+  &:focus {
+    border-color: var(--accent);
+  }
+}
+
+.lndrui__input--transparent {
+  background-color: var(--o05);
+  border-color: transparent;
+
+  &:focus {
+    background-color: transparent;
+    border-color: var(--o10);
+  }
+}
