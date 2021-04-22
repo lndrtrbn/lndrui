@@ -17,7 +17,10 @@ export interface ButtonProps {
 }
 
 /**
- * Just a simple Button component. Click, it's magic
+ * Just a simple Button component
+ * 
+ * By default the button is colored but a **transparent** mode can be used
+ * to set a light transparent background instead
  */
 export default function Button({ label, transparent = false, onClick }: ButtonProps) {
   return (
