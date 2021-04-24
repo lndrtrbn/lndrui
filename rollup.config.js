@@ -2,19 +2,20 @@ import typescript from 'rollup-plugin-typescript2';
 import del from 'rollup-plugin-delete';
 import pkg from './package.json';
 import scss from 'rollup-plugin-scss';
+import postcss from 'rollup-plugin-postcss'
 
 export default [
   {
     input: 'src/index.ts',
     output: [
-      { file: pkg.main, format: 'cjs' },
-      { file: pkg.module, format: 'esm' },
+      { file: './dist/index.js', format: 'cjs' }
     ],
     plugins: [
       del({ targets: ['dist/*'] }),
       typescript(),
-      scss()
+      scss(),
+      postcss({ extract: true }),
     ],
-    external: Object.keys(pkg.peerDependencies || {}),
+    external: Object.keys(pkg.dependencies || {}),
   },
 ];
