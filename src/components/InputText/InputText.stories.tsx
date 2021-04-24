@@ -25,3 +25,9 @@ transparent.args = {
   ...WithValue.args,
   transparent: true
 }
+
+export const InError = Template.bind({});
+InError.args = {
+  ...WithValue.args,
+  inError: true
+}

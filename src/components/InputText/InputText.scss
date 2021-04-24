@@ -18,3 +18,8 @@
     border-color: var(--o10);
   }
 }
+
+.lndrui__input--error {
+  border-color: var(--danger) !important;
+  color: var(--danger);
+}

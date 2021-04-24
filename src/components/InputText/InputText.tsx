@@ -16,21 +16,29 @@ export interface InputTextProps {
    * If the input should have transparent background
    */
    transparent: boolean,
+   /**
+    * If the field is in error state
+    */
+   inError: boolean
 }
 
 /**
  * Just a simple text input component
  */
-export default function InputText({ placeholder, value, transparent = false }: InputTextProps) {
+export default function InputText({ placeholder, value, transparent = false, inError = false }: InputTextProps) {
   const [state, setState] = useState(value);
 
   function handleChanges(event: ChangeEvent<HTMLInputElement>) {
     setState(event.target.value);
   }
 
+  let className: string = "lndrui__input";
+  if (transparent) className += " lndrui__input--transparent";
+  if (inError) className += " lndrui__input--error";
+
   return (
     <input
-      className={`lndrui__input ${transparent ? "lndrui__input--transparent" : ""}`}
+      className={className}
       type="text"
       placeholder={placeholder}
       value={state}
