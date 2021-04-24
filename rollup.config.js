@@ -8,7 +8,7 @@ export default [
   {
     input: 'src/index.ts',
     output: [
-      { file: './dist/index.js', format: 'esm' }
+      { file: pkg.main, format: 'cjs' }
     ],
     plugins: [
       del({ targets: ['dist/*'] }),

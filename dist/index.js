@@ -1,5 +1,9 @@
-import { jsx } from 'react/jsx-runtime';
-import { useState } from 'react';
+'use strict';
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
+var jsxRuntime = require('react/jsx-runtime');
+var react = require('react');
 
 /*! *****************************************************************************
 Copyright (c) Microsoft Corporation.
@@ -35,7 +39,7 @@ function Button(_a) {
     var className = "lndrui lndrui__btn";
     if (style !== "default")
         className += " lndrui__btn--" + style;
-    return (jsx("button", __assign({ className: className, onClick: onClick, title: label }, { children: label }), void 0));
+    return (jsxRuntime.jsx("button", __assign({ className: className, onClick: onClick, title: label }, { children: label }), void 0));
 }
 
 /**
@@ -43,7 +47,7 @@ function Button(_a) {
  */
 function InputText(_a) {
     var placeholder = _a.placeholder, value = _a.value, _b = _a.transparent, transparent = _b === void 0 ? false : _b, _c = _a.inError, inError = _c === void 0 ? false : _c;
-    var _d = useState(value), state = _d[0], setState = _d[1];
+    var _d = react.useState(value), state = _d[0], setState = _d[1];
     function handleChanges(event) {
         setState(event.target.value);
     }
@@ -52,18 +56,20 @@ function InputText(_a) {
         className += " lndrui__input--transparent";
     if (inError)
         className += " lndrui__input--error";
-    return (jsx("input", { className: className, type: "text", placeholder: placeholder, value: state, onChange: handleChanges }, void 0));
+    return (jsxRuntime.jsx("input", { className: className, type: "text", placeholder: placeholder, value: state, onChange: handleChanges }, void 0));
 }
 
 function Title(_a) {
     var value = _a.value, _b = _a.level, level = _b === void 0 ? "1" : _b;
     console.log(level);
     var titles = new Map()
-        .set("1", jsx("h1", __assign({ className: "lndrui lndrui__title" }, { children: value }), void 0))
-        .set("2", jsx("h2", __assign({ className: "lndrui lndrui__title" }, { children: value }), void 0))
-        .set("3", jsx("h3", __assign({ className: "lndrui lndrui__title" }, { children: value }), void 0))
-        .set("4", jsx("h4", __assign({ className: "lndrui lndrui__title" }, { children: value }), void 0));
+        .set("1", jsxRuntime.jsx("h1", __assign({ className: "lndrui lndrui__title" }, { children: value }), void 0))
+        .set("2", jsxRuntime.jsx("h2", __assign({ className: "lndrui lndrui__title" }, { children: value }), void 0))
+        .set("3", jsxRuntime.jsx("h3", __assign({ className: "lndrui lndrui__title" }, { children: value }), void 0))
+        .set("4", jsxRuntime.jsx("h4", __assign({ className: "lndrui lndrui__title" }, { children: value }), void 0));
     return titles.get(level);
 }
 
-export { Button, InputText, Title };
+exports.Button = Button;
+exports.InputText = InputText;
+exports.Title = Title;

@@ -4,7 +4,9 @@
   "author": "Landry Trebon",
   "version": "1.0.0",
   "private": true,
+  "main": "dist/index.js",
   "typings": "dist/index.d.ts",
+  "files": [ "dist" ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lndrtrbn/lndrui.git"
