@@ -1,6 +1,6 @@
-# LNDRUI - Bank of UI components for React
+# Bank of UI components for React
 
-Lndrui is a library of reusable components made in React for my personnal projects.
+`Lndrui` is a library of reusable components made in React for my personnal projects.
 
 This library is made to be used in React applications.
 
@@ -19,7 +19,7 @@ A local sotrybook app will launch with all components inside.
 
 ## Library usage
 
-To use the library install it with npm using the ur of the repository.
+To use the library install it with npm using the URL of the repository.
 
 ```
 npm i https://github.com/lndrtrbn/lndrui.git
@@ -32,3 +32,5 @@ Then import the css file containing the styles of the components in the entry po
 ```
 import "@lndrtrbn/lndrui/dist/index.css";
 ```
+
+Here we go!
