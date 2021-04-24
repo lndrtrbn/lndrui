@@ -16,5 +16,17 @@ Default.args = {
 export const Transparent = Template.bind({});
 Transparent.args = {
   ...Default.args,
-  transparent: true
+  style: "transparent"
+}
+
+export const Success = Template.bind({});
+Success.args = {
+  ...Default.args,
+  style: "success"
+}
+
+export const Danger = Template.bind({});
+Danger.args = {
+  ...Default.args,
+  style: "danger"
 }

@@ -32,7 +32,7 @@ export default function InputText({ placeholder, value, transparent = false, inE
     setState(event.target.value);
   }
 
-  let className: string = "lndrui__input";
+  let className = "lndrui__input";
   if (transparent) className += " lndrui__input--transparent";
   if (inError) className += " lndrui__input--error";
 

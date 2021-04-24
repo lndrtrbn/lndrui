@@ -7,9 +7,9 @@ export interface ButtonProps {
    */
   label: string,
   /**
-   * If the button should have transparent background
+   * The style of the button
    */
-  transparent: boolean,
+  style: "default" | "transparent" | "success" | "danger",
   /**
    * Callback on button click
    */
@@ -18,14 +18,14 @@ export interface ButtonProps {
 
 /**
  * Just a simple Button component
- * 
- * By default the button is colored but a **transparent** mode can be used
- * to set a light transparent background instead
  */
-export default function Button({ label, transparent = false, onClick }: ButtonProps) {
+export default function Button({ label, style = "default", onClick }: ButtonProps) {
+  let className = "lndrui__btn";
+  if (style !== "default") className += ` lndrui__btn--${style}`;
+
   return (
     <button
-      className={`lndrui__btn ${transparent ? "lndrui__btn--transparent" : ""}`}
+      className={className}
       onClick={onClick}
       title={label}>
       {label}
