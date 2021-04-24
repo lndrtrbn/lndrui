@@ -35,25 +35,6 @@ body {
 .lndrui {
   font-family: "Ubuntu", sans-serif; }
 
-.lndrui__input {
-  border: 2px solid var(--primary);
-  outline: none;
-  padding: 10px 20px;
-  transition: all 0.2s ease; }
-  .lndrui__input:focus {
-    border-color: var(--accent); }
-
-.lndrui__input--transparent {
-  background-color: var(--o05);
-  border-color: transparent; }
-  .lndrui__input--transparent:focus {
-    background-color: transparent;
-    border-color: var(--o10); }
-
-.lndrui__input--error {
-  border-color: var(--danger) !important;
-  color: var(--danger); }
-
 .lndrui__btn {
   background-color: var(--primary);
   border: 0;
@@ -93,3 +74,22 @@ h3.lndrui__title {
 
 h4.lndrui__title {
   font-size: 1.5em; }
+
+.lndrui__input {
+  border: 2px solid var(--primary);
+  outline: none;
+  padding: 10px 20px;
+  transition: all 0.2s ease; }
+  .lndrui__input:focus {
+    border-color: var(--accent); }
+
+.lndrui__input--transparent {
+  background-color: var(--o05);
+  border-color: transparent; }
+  .lndrui__input--transparent:focus {
+    background-color: transparent;
+    border-color: var(--o10); }
+
+.lndrui__input--error {
+  border-color: var(--danger) !important;
+  color: var(--danger); }

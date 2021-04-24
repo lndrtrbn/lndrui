@@ -7,6 +7,6 @@ export interface TitleProps {
     /**
      * Which type of title
      */
-    level: "1" | "2" | "3" | "4";
+    level?: "1" | "2" | "3" | "4";
 }
 export default function Title({ value, level }: TitleProps): any;

@@ -2,21 +2,21 @@
 import "./InputText.scss";
 export interface InputTextProps {
     /**
-     * Optionnal message when the input is empty
-     */
-    placeholder?: string;
-    /**
      * The value of the input
      */
     value: string;
     /**
+     * Optionnal message when the input is empty
+     */
+    placeholder?: string;
+    /**
      * If the input should have transparent background
      */
-    transparent: boolean;
+    transparent?: boolean;
     /**
      * If the field is in error state
      */
-    inError: boolean;
+    inError?: boolean;
 }
 /**
  * Just a simple text input component
