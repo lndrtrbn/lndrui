@@ -57,6 +57,24 @@ body {
 .lndrui__btn--danger {
   background-color: var(--danger); }
 
+.lndrui__title {
+  font-weight: 500;
+  line-height: 1;
+  margin: 0;
+  margin-bottom: 1em; }
+
+h1.lndrui__title {
+  font-size: 3em; }
+
+h2.lndrui__title {
+  font-size: 2.5em; }
+
+h3.lndrui__title {
+  font-size: 2em; }
+
+h4.lndrui__title {
+  font-size: 1.5em; }
+
 .lndrui__input {
   border: 2px solid var(--primary);
   outline: none;
@@ -75,21 +93,3 @@ body {
 .lndrui__input--error {
   border-color: var(--danger) !important;
   color: var(--danger); }
-
-.lndrui__title {
-  font-weight: 500;
-  line-height: 1;
-  margin: 0;
-  margin-bottom: 1em; }
-
-h1.lndrui__title {
-  font-size: 3em; }
-
-h2.lndrui__title {
-  font-size: 2.5em; }
-
-h3.lndrui__title {
-  font-size: 2em; }
-
-h4.lndrui__title {
-  font-size: 1.5em; }
