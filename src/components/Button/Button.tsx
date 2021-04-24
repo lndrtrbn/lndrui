@@ -8,7 +8,7 @@ export interface ButtonProps {
   /**
    * The style of the button
    */
-  style: "default" | "transparent" | "success" | "danger",
+  style?: "default" | "transparent" | "success" | "danger",
   /**
    * Callback on button click
    */
