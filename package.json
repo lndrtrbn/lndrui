@@ -6,7 +6,9 @@
   "private": true,
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
-  "files": [ "dist" ],
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lndrtrbn/lndrui.git"
@@ -68,6 +70,7 @@
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.3",
     "rollup": "^2.45.2",
+    "rollup-plugin-copy": "^3.4.0",
     "rollup-plugin-delete": "^2.0.0",
     "rollup-plugin-scss": "^2.6.1",
     "rollup-plugin-typescript2": "^0.30.0",
