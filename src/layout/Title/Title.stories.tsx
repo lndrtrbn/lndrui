@@ -2,7 +2,7 @@ import { Meta, Story } from "@storybook/react";
 import Title, { TitleProps } from "./Title";
 
 export default {
-  title: "Lndrui/Title",
+  title: "Layout/Title",
   component: Title
 } as Meta;
 

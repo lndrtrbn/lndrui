@@ -1,10 +1,12 @@
+import { ReactNode } from "react";
+
 import "./Button.scss";
 
 export interface ButtonProps {
   /**
-   * Label of the button
+   * Content to insert inside the button
    */
-  label: string,
+  children: ReactNode,
   /**
    * The style of the button
    */
@@ -18,16 +20,15 @@ export interface ButtonProps {
 /**
  * Just a simple Button component
  */
-export default function Button({ label, style = "default", onClick }: ButtonProps) {
+export default function Button({ children, style = "default", onClick }: ButtonProps) {
   let className = "lndrui lndrui__btn";
   if (style !== "default") className += ` lndrui__btn--${style}`;
 
   return (
     <button
       className={className}
-      onClick={onClick}
-      title={label}>
-      {label}
+      onClick={onClick}>
+      {children}
     </button>
   );
 }

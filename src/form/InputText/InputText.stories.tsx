@@ -2,7 +2,7 @@ import { Meta, Story } from "@storybook/react";
 import InputText, { InputTextProps } from "./InputText";
 
 export default {
-  title: "Lndrui/Input Text",
+  title: "Form/Input Text",
   component: InputText
 } as Meta;
 
