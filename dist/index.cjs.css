@@ -1,0 +1,95 @@
+:root {
+  --black:       #242424;
+  --white:       #eeeeee;
+  --primary:     #e9c46a;
+  --accent:      #f4a261;
+  --success:     #09d19f;
+  --danger:      #fc665c;
+  --o30:         rgba(36, 36, 36, 0.3);
+  --o20:         rgba(36, 36, 36, 0.2);
+  --o10:         rgba(36, 36, 36, 0.1);
+  --o05:         rgba(36, 36, 36, 0.05); }
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("fonts/Ubuntu-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("fonts/Ubuntu-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500; }
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("fonts/Ubuntu-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300; }
+
+body {
+  font-size: 14px;
+  color: var(--black); }
+
+.lndrui {
+  font-family: "Ubuntu", sans-serif; }
+
+.lndrui__btn {
+  background-color: var(--primary);
+  border: 0;
+  cursor: pointer;
+  font-weight: 500;
+  outline: none;
+  padding: 10px 20px;
+  transition: all 0.2s ease; }
+  .lndrui__btn:hover {
+    box-shadow: inset 0px 0px 0px 50px var(--o10); }
+  .lndrui__btn:active {
+    box-shadow: inset 0px 0px 0px 50px var(--o20); }
+
+.lndrui__btn--transparent {
+  background-color: var(--o05); }
+
+.lndrui__btn--success {
+  background-color: var(--success); }
+
+.lndrui__btn--danger {
+  background-color: var(--danger); }
+
+.lndrui__input {
+  border: 2px solid var(--primary);
+  outline: none;
+  padding: 10px 20px;
+  transition: all 0.2s ease; }
+  .lndrui__input:focus {
+    border-color: var(--accent); }
+
+.lndrui__input--transparent {
+  background-color: var(--o05);
+  border-color: transparent; }
+  .lndrui__input--transparent:focus {
+    background-color: transparent;
+    border-color: var(--o10); }
+
+.lndrui__input--error {
+  border-color: var(--danger) !important;
+  color: var(--danger); }
+
+.lndrui__title {
+  font-weight: 500;
+  line-height: 1;
+  margin: 0;
+  margin-bottom: 1em; }
+
+h1.lndrui__title {
+  font-size: 3em; }
+
+h2.lndrui__title {
+  font-size: 2.5em; }
+
+h3.lndrui__title {
+  font-size: 2em; }
+
+h4.lndrui__title {
+  font-size: 1.5em; }
