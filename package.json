@@ -4,6 +4,8 @@
   "author": "Landry Trebon",
   "version": "1.0.0",
   "private": true,
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
   "typings": "dist/index.d.ts",
   "repository": {
     "type": "git",
