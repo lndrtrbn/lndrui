@@ -12,7 +12,6 @@ export interface TitleProps {
 }
 
 export default function Title({ value, level = "1" }: TitleProps) {
-  console.log(level)
   const titles = new Map<string, any>()
     .set("1", <h1 className="lndrui lndrui__title">{value}</h1>)
     .set("2", <h2 className="lndrui lndrui__title">{value}</h2>)

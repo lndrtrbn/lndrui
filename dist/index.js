@@ -61,7 +61,6 @@ function InputText(_a) {
 
 function Title(_a) {
     var value = _a.value, _b = _a.level, level = _b === void 0 ? "1" : _b;
-    console.log(level);
     var titles = new Map()
         .set("1", jsxRuntime.jsx("h1", __assign({ className: "lndrui lndrui__title" }, { children: value }), void 0))
         .set("2", jsxRuntime.jsx("h2", __assign({ className: "lndrui lndrui__title" }, { children: value }), void 0))
