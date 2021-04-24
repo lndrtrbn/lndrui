@@ -1,3 +1,3 @@
-export * from "./Button/Button";
-export * from "./InputText/InputText";
-export * from "./Title/Title";
+export { default as Button } from "./Button/Button";
+export { default as InputText } from "./InputText/InputText";
+export { default as Title } from "./Title/Title";
