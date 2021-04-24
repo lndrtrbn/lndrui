@@ -1,4 +1,3 @@
-import "../../variables.scss";
 import "./Button.scss";
 
 export interface ButtonProps {
@@ -20,7 +19,7 @@ export interface ButtonProps {
  * Just a simple Button component
  */
 export default function Button({ label, style = "default", onClick }: ButtonProps) {
-  let className = "lndrui__btn";
+  let className = "lndrui lndrui__btn";
   if (style !== "default") className += ` lndrui__btn--${style}`;
 
   return (

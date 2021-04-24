@@ -1,6 +1,5 @@
 import { ChangeEvent, useState } from "react";
 
-import "../../variables.scss";
 import "./InputText.scss";
 
 export interface InputTextProps {
@@ -32,7 +31,7 @@ export default function InputText({ placeholder, value, transparent = false, inE
     setState(event.target.value);
   }
 
-  let className = "lndrui__input";
+  let className = "lndrui lndrui__input";
   if (transparent) className += " lndrui__input--transparent";
   if (inError) className += " lndrui__input--error";
 

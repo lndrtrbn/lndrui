@@ -1,0 +1,11 @@
+@import "./variables.scss";
+@import "./fonts.scss";
+
+body {
+  font-size: 14px;
+  color: var(--black);
+}
+
+.lndrui {
+  font-family: "Ubuntu", sans-serif;
+}
