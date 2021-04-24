@@ -8,9 +8,7 @@ import copy from 'rollup-plugin-copy';
 export default [
   {
     input: 'src/index.ts',
-    output: [
-      { file: pkg.main, format: 'cjs' }
-    ],
+    output: [{ file: pkg.main, format: 'cjs' }],
     plugins: [
       del({ targets: ['dist/*'] }),
       typescript(),

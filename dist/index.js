@@ -42,6 +42,11 @@ function Button(_a) {
     return (jsxRuntime.jsx("button", __assign({ className: className, onClick: onClick, title: label }, { children: label }), void 0));
 }
 
+var index$2 = /*#__PURE__*/Object.freeze({
+    __proto__: null,
+    Button: Button
+});
+
 /**
  * Just a simple text input component
  */
@@ -59,6 +64,11 @@ function InputText(_a) {
     return (jsxRuntime.jsx("input", { className: className, type: "text", placeholder: placeholder, value: state, onChange: handleChanges }, void 0));
 }
 
+var index$1 = /*#__PURE__*/Object.freeze({
+    __proto__: null,
+    InputText: InputText
+});
+
 function Title(_a) {
     var value = _a.value, _b = _a.level, level = _b === void 0 ? "1" : _b;
     var titles = new Map()
@@ -69,6 +79,11 @@ function Title(_a) {
     return titles.get(level);
 }
 
-exports.Button = Button;
-exports.InputText = InputText;
-exports.Title = Title;
+var index = /*#__PURE__*/Object.freeze({
+    __proto__: null,
+    Title: Title
+});
+
+exports.buttons = index$2;
+exports.form = index$1;
+exports.layout = index;

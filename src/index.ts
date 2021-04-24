@@ -1,2 +1,5 @@
 import "./styles/index.scss";
-export * from "./components";
+
+export * as buttons from "./buttons";
+export * as form from "./form";
+export * as layout from "./layout";
