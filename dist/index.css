@@ -116,6 +116,26 @@ body {
   cursor: pointer;
   margin-left: 10px; }
 
+.lndrui__textarea {
+  border: 2px solid var(--primary);
+  outline: none;
+  padding: 10px;
+  transition: all 0.2s ease;
+  min-width: 300px; }
+  .lndrui__textarea:focus {
+    border-color: var(--accent); }
+
+.lndrui__textarea--transparent {
+  background-color: var(--o05);
+  border-color: transparent; }
+  .lndrui__textarea--transparent:focus {
+    background-color: transparent;
+    border-color: var(--o10); }
+
+.lndrui__textarea--error {
+  border-color: var(--danger) !important;
+  color: var(--danger); }
+
 .lndrui__title {
   font-weight: 500;
   line-height: 1;

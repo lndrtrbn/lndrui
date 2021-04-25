@@ -57,6 +57,9 @@ function InputText(_a) {
     return (jsxRuntime.jsx("input", { className: className, type: "text", placeholder: placeholder, value: value, onChange: handleChanges }, void 0));
 }
 
+/**
+ * Just a simple Checkbox component
+ */
 function Checkbox(_a) {
     var checked = _a.checked, children = _a.children, onChange = _a.onChange;
     var className = "lndrui lndrui__checkbox";
@@ -68,6 +71,22 @@ function Checkbox(_a) {
     return (jsxRuntime.jsxs("div", __assign({ className: className, onClick: check }, { children: [jsxRuntime.jsx("span", { className: "lndrui__checkbox--checkmark" }, void 0),
             jsxRuntime.jsx("label", __assign({ className: "lndrui__checkbox--label" }, { children: children }), void 0),
             jsxRuntime.jsx("input", { type: "checkbox", checked: checked }, void 0)] }), void 0));
+}
+
+/**
+ * Just a simple Textarea component
+ */
+function Textarea(_a) {
+    var value = _a.value, _b = _a.style, style = _b === void 0 ? "default" : _b, _c = _a.inError, inError = _c === void 0 ? false : _c, onChange = _a.onChange;
+    var className = "lndrui lndrui__textarea";
+    if (style !== "default")
+        className += " lndrui__textarea--" + style;
+    if (inError)
+        className += " lndrui__textarea--error";
+    function handleChanges(event) {
+        onChange(event.target.value);
+    }
+    return (jsxRuntime.jsx("textarea", __assign({ className: className, rows: 6, onChange: handleChanges }, { children: value }), void 0));
 }
 
 function Title(_a) {
@@ -83,4 +102,5 @@ function Title(_a) {
 exports.Button = Button;
 exports.Checkbox = Checkbox;
 exports.InputText = InputText;
+exports.Textarea = Textarea;
 exports.Title = Title;

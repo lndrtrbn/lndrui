@@ -17,6 +17,9 @@ export interface CheckboxProps {
   onChange: (value: boolean) => void
 }
 
+/**
+ * Just a simple Checkbox component
+ */
 export default function Checkbox({ checked, children, onChange }: CheckboxProps) {
   let className = "lndrui lndrui__checkbox";
   if (checked) className += " checked";
