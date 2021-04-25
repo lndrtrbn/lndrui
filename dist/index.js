@@ -3,7 +3,6 @@
 Object.defineProperty(exports, '__esModule', { value: true });
 
 var jsxRuntime = require('react/jsx-runtime');
-var react = require('react');
 
 /*! *****************************************************************************
 Copyright (c) Microsoft Corporation.
@@ -35,28 +34,27 @@ var __assign = function() {
  * Just a simple Button component
  */
 function Button(_a) {
-    var label = _a.label, _b = _a.style, style = _b === void 0 ? "default" : _b, onClick = _a.onClick;
+    var children = _a.children, _b = _a.style, style = _b === void 0 ? "default" : _b, onClick = _a.onClick;
     var className = "lndrui lndrui__btn";
     if (style !== "default")
         className += " lndrui__btn--" + style;
-    return (jsxRuntime.jsx("button", __assign({ className: className, onClick: onClick, title: label }, { children: label }), void 0));
+    return (jsxRuntime.jsx("button", __assign({ className: className, onClick: onClick }, { children: children }), void 0));
 }
 
 /**
  * Just a simple text input component
  */
 function InputText(_a) {
-    var placeholder = _a.placeholder, value = _a.value, _b = _a.transparent, transparent = _b === void 0 ? false : _b, _c = _a.inError, inError = _c === void 0 ? false : _c;
-    var _d = react.useState(value), state = _d[0], setState = _d[1];
-    function handleChanges(event) {
-        setState(event.target.value);
-    }
+    var placeholder = _a.placeholder, value = _a.value, _b = _a.style, style = _b === void 0 ? "default" : _b, _c = _a.inError, inError = _c === void 0 ? false : _c, onChange = _a.onChange;
     var className = "lndrui lndrui__input";
-    if (transparent)
-        className += " lndrui__input--transparent";
+    if (style !== "default")
+        className += " lndrui__input--" + style;
     if (inError)
         className += " lndrui__input--error";
-    return (jsxRuntime.jsx("input", { className: className, type: "text", placeholder: placeholder, value: state, onChange: handleChanges }, void 0));
+    function handleChanges(event) {
+        onChange(event.target.value);
+    }
+    return (jsxRuntime.jsx("input", { className: className, type: "text", placeholder: placeholder, value: value, onChange: handleChanges }, void 0));
 }
 
 function Title(_a) {

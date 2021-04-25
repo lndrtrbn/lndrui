@@ -10,15 +10,19 @@ export interface InputTextProps {
      */
     placeholder?: string;
     /**
-     * If the input should have transparent background
+     * The style of the input
      */
-    transparent?: boolean;
+    style?: "default" | "transparent";
     /**
      * If the field is in error state
      */
     inError?: boolean;
+    /**
+     * Callback when the input value changes
+     */
+    onChange: (value: string) => {};
 }
 /**
  * Just a simple text input component
  */
-export default function InputText({ placeholder, value, transparent, inError }: InputTextProps): JSX.Element;
+export default function InputText({ placeholder, value, style, inError, onChange }: InputTextProps): JSX.Element;
