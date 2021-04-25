@@ -12,6 +12,6 @@ export interface CheckboxProps {
     /**
      * Callback on value changes
      */
-    onChange(value: boolean): () => void;
+    onChange: (value: boolean) => void;
 }
 export default function Checkbox({ checked, children, onChange }: CheckboxProps): JSX.Element;

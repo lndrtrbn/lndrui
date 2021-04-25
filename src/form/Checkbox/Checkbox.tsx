@@ -14,15 +14,19 @@ export interface CheckboxProps {
   /**
    * Callback on value changes
    */
-  onChange(value: boolean): () => void
+  onChange: (value: boolean) => void
 }
 
 export default function Checkbox({ checked, children, onChange }: CheckboxProps) {
   let className = "lndrui lndrui__checkbox";
   if (checked) className += " checked";
 
+  function check() {
+    onChange(!checked);
+  }
+
   return (
-    <div className={className} onClick={onChange(!checked)}>
+    <div className={className} onClick={check}>
       <span className="lndrui__checkbox--checkmark"></span>
       <label className="lndrui__checkbox--label">{children}</label>
       <input type="checkbox" checked={checked} />

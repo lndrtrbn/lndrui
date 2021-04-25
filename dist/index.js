@@ -62,7 +62,10 @@ function Checkbox(_a) {
     var className = "lndrui lndrui__checkbox";
     if (checked)
         className += " checked";
-    return (jsxRuntime.jsxs("div", __assign({ className: className, onClick: onChange(!checked) }, { children: [jsxRuntime.jsx("span", { className: "lndrui__checkbox--checkmark" }, void 0),
+    function check() {
+        onChange(!checked);
+    }
+    return (jsxRuntime.jsxs("div", __assign({ className: className, onClick: check }, { children: [jsxRuntime.jsx("span", { className: "lndrui__checkbox--checkmark" }, void 0),
             jsxRuntime.jsx("label", __assign({ className: "lndrui__checkbox--label" }, { children: children }), void 0),
             jsxRuntime.jsx("input", { type: "checkbox", checked: checked }, void 0)] }), void 0));
 }
