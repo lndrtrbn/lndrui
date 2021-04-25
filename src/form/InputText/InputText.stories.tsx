@@ -23,7 +23,7 @@ WithValue.args = {
 export const transparent = Template.bind({});
 transparent.args = {
   ...WithValue.args,
-  transparent: true
+  style: "transparent"
 }
 
 export const InError = Template.bind({});
