@@ -1,4 +1,4 @@
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent } from "react";
 
 import "./InputText.scss";
 
@@ -12,35 +12,37 @@ export interface InputTextProps {
    */
   placeholder?: string,
   /**
-   * If the input should have transparent background
+   * The style of the input
    */
-   transparent?: boolean,
+   style?: "default" | "transparent",
    /**
     * If the field is in error state
     */
-   inError?: boolean
+   inError?: boolean,
+   /**
+    * Callback when the input value changes
+    */
+   onChange: (value: string) => {}
 }
 
 /**
  * Just a simple text input component
  */
-export default function InputText({ placeholder, value, transparent = false, inError = false }: InputTextProps) {
-  const [state, setState] = useState(value);
+export default function InputText({ placeholder, value, style = "default", inError = false, onChange }: InputTextProps) {
+  let className = "lndrui lndrui__input";
+  if (style !== "default") className += ` lndrui__input--${style}`;
+  if (inError) className += " lndrui__input--error";
 
   function handleChanges(event: ChangeEvent<HTMLInputElement>) {
-    setState(event.target.value);
+    onChange(event.target.value);
   }
-
-  let className = "lndrui lndrui__input";
-  if (transparent) className += " lndrui__input--transparent";
-  if (inError) className += " lndrui__input--error";
 
   return (
     <input
       className={className}
       type="text"
       placeholder={placeholder}
-      value={state}
+      value={value}
       onChange={handleChanges}
     />
   );
