@@ -22,7 +22,7 @@ export interface InputTextProps {
    /**
     * Callback when the input value changes
     */
-   onChange: (value: string) => {}
+   onChange: (value: string) => void
 }
 
 /**
