@@ -76,6 +76,46 @@ body {
   border-color: var(--danger) !important;
   color: var(--danger); }
 
+.lndrui__checkbox {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  position: relative; }
+  .lndrui__checkbox:hover .lndrui__checkbox--checkmark, .lndrui__checkbox.checked:hover .lndrui__checkbox--checkmark {
+    background-color: var(--accent);
+    border-color: var(--accent); }
+  .lndrui__checkbox.checked .lndrui__checkbox--checkmark {
+    background-color: var(--primary); }
+    .lndrui__checkbox.checked .lndrui__checkbox--checkmark:after {
+      display: block; }
+  .lndrui__checkbox input {
+    cursor: pointer;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    width: 0; }
+
+.lndrui__checkbox--checkmark {
+  border: 3px solid var(--primary);
+  height: 17px;
+  transition: all 0.2s ease;
+  width: 17px; }
+  .lndrui__checkbox--checkmark:after {
+    border: solid var(--white);
+    border-width: 0 3px 3px 0;
+    content: "";
+    display: none;
+    height: 10px;
+    left: 8px;
+    position: absolute;
+    top: 4px;
+    transform: rotate(45deg);
+    width: 4px; }
+
+.lndrui__checkbox--label {
+  cursor: pointer;
+  margin-left: 10px; }
+
 .lndrui__title {
   font-weight: 500;
   line-height: 1;

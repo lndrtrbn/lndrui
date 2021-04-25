@@ -57,6 +57,16 @@ function InputText(_a) {
     return (jsxRuntime.jsx("input", { className: className, type: "text", placeholder: placeholder, value: value, onChange: handleChanges }, void 0));
 }
 
+function Checkbox(_a) {
+    var checked = _a.checked, children = _a.children, onChange = _a.onChange;
+    var className = "lndrui lndrui__checkbox";
+    if (checked)
+        className += " checked";
+    return (jsxRuntime.jsxs("div", __assign({ className: className, onClick: onChange(!checked) }, { children: [jsxRuntime.jsx("span", { className: "lndrui__checkbox--checkmark" }, void 0),
+            jsxRuntime.jsx("label", __assign({ className: "lndrui__checkbox--label" }, { children: children }), void 0),
+            jsxRuntime.jsx("input", { type: "checkbox", checked: checked }, void 0)] }), void 0));
+}
+
 function Title(_a) {
     var value = _a.value, _b = _a.level, level = _b === void 0 ? "1" : _b;
     var titles = new Map()
@@ -68,5 +78,6 @@ function Title(_a) {
 }
 
 exports.Button = Button;
+exports.Checkbox = Checkbox;
 exports.InputText = InputText;
 exports.Title = Title;
