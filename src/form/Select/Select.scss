@@ -3,6 +3,7 @@
 }
 
 .lndrui__select--header {
+  background-color: var(--white);
   border: 3px solid var(--primary);
   cursor: pointer;
   font-weight: 500;
@@ -38,6 +39,7 @@
 }
 
 .lndrui__select--options {
+  background-color: var(--white);
   border: 3px solid var(--o10);
   box-sizing: border-box;
   outline: none;

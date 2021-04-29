@@ -31,6 +31,7 @@
 }
 
 .lndrui__checkbox--checkmark {
+  background-color: var(--white);
   border: 3px solid var(--primary);
   height: 17px;
   transition: all 0.2s ease;

@@ -1,8 +1,10 @@
 .lndrui__input {
-  border: 2px solid var(--primary);
+  border: 3px solid var(--primary);
+  box-sizing: border-box;
   outline: none;
   padding: 10px 20px;
   transition: all 0.2s ease;
+  width: 100%;
 
   &:focus {
     border-color: var(--accent);
