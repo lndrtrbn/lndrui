@@ -11,6 +11,7 @@ const Template: Story<TitleProps> = args => <Title {...args} />;
 export const Title1 = Template.bind({});
 Title1.args = {
   value: "Header 1",
+  level: "2"
 }
 
 export const Title2 = Template.bind({});
