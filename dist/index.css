@@ -39,9 +39,10 @@ body {
   background-color: var(--primary);
   border: 0;
   cursor: pointer;
+  height: 38px;
   font-weight: 500;
   outline: none;
-  padding: 10px 20px;
+  padding: 0 20px;
   transition: all 0.2s ease; }
   .lndrui__btn:hover {
     box-shadow: inset 0px 0px 0px 50px var(--o10); }
@@ -58,10 +59,12 @@ body {
   background-color: var(--danger); }
 
 .lndrui__input {
-  border: 2px solid var(--primary);
+  border: 3px solid var(--primary);
+  box-sizing: border-box;
   outline: none;
   padding: 10px 20px;
-  transition: all 0.2s ease; }
+  transition: all 0.2s ease;
+  width: 100%; }
   .lndrui__input:focus {
     border-color: var(--accent); }
 
@@ -96,6 +99,7 @@ body {
     width: 0; }
 
 .lndrui__checkbox--checkmark {
+  background-color: var(--white);
   border: 3px solid var(--primary);
   height: 17px;
   transition: all 0.2s ease;
@@ -117,7 +121,7 @@ body {
   margin-left: 10px; }
 
 .lndrui__textarea {
-  border: 2px solid var(--primary);
+  border: 3px solid var(--primary);
   outline: none;
   padding: 10px;
   transition: all 0.2s ease;

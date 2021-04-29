@@ -89,6 +89,9 @@ function Textarea(_a) {
     return (jsxRuntime.jsx("textarea", __assign({ className: className, rows: 6, onChange: handleChanges }, { children: value }), void 0));
 }
 
+/**
+ * Simple title component
+ */
 function Title(_a) {
     var value = _a.value, _b = _a.level, level = _b === void 0 ? "1" : _b;
     var titles = new Map()

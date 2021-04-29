@@ -9,4 +9,7 @@ export interface TitleProps {
      */
     level?: "1" | "2" | "3" | "4";
 }
+/**
+ * Simple title component
+ */
 export default function Title({ value, level }: TitleProps): any;
