@@ -3,54 +3,39 @@
   /* == COLORS == */
   /* ============ */
 
-  --color-brick-l100: #ffffff;
-  --color-brick-l80: #f9e7e1;
-  --color-brick-l60: #f3cfc3;
-  --color-brick-l40: #ecb7a4;
-  --color-brick-l20: #e69f86;
-  --color-brick-main: #e08768;
-  --color-brick-d20: #b36c53;
-  --color-brick-d40: #86513e;
-  --color-brick-d60: #5a362a;
-  --color-brick-d80: #2d1b15;
-  --color-brick-d100: #000000;
+  --color-brick-l100: 255 255 255;
+  --color-brick-l80: 249 231 225;
+  --color-brick-l60: 243 207 195;
+  --color-brick-l40: 236 183 164;
+  --color-brick-l20: 230 159 134;
+  --color-brick-main: 224 135 104;
+  --color-brick-d20: 179 108 83;
+  --color-brick-d40: 134 81 62;
+  --color-brick-d60: 90 54 42;
+  --color-brick-d80: 45 27 21;
+  --color-brick-d100: 0 0 0;
 
-  --color-ocean-l100: #ffffff;
-  --color-ocean-l80: #dce0f9;
-  --color-ocean-l60: #b9c1f3;
-  --color-ocean-l40: #97a2ec;
-  --color-ocean-l20: #7483e6;
-  --color-ocean-main: #5164e0;
-  --color-ocean-d20: #4150b3;
-  --color-ocean-d40: #313c86;
-  --color-ocean-d60: #20285a;
-  --color-ocean-d80: #10142d;
-  --color-ocean-d100: #000000;
+  --color-ocean-l100: 255 255 255;
+  --color-ocean-l80: 220 224 249;
+  --color-ocean-l60: 185 193 243;
+  --color-ocean-l40: 151 162 236;
+  --color-ocean-l20: 116 131 230;
+  --color-ocean-main: 81 100 224;
+  --color-ocean-d20: 65 80 179;
+  --color-ocean-d40: 49 60 134;
+  --color-ocean-d60: 32 40 90;
+  --color-ocean-d80: 16 20 45;
+  --color-ocean-d100: 0 0 0;
 
-  --color-grey-l100: #ffffff;
-  --color-grey-l80: #ededed;
-  --color-grey-l60: #dadada;
-  --color-grey-l40: #c8c8c8;
-  --color-grey-l20: #b5b5b5;
-  --color-grey-main: #a3a3a3;
-  --color-grey-d20: #828282;
-  --color-grey-d40: #626262;
-  --color-grey-d60: #414141;
-  --color-grey-d80: #212121;
-  --color-grey-d100: #000000;
-
-  /* =========== */
-  /* == FONTS == */
-  /* =========== */
-
-  --font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu",
-    "Cantarell", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
-
-  --line-height: 1.5;
-
-  --font-size: 16px;
-  --font-size-sm: 0.8rem;
-  --font-size-md: 1rem;
-  --font-size-lg: 1.2rem;
+  --color-grey-l100: 255 255 255;
+  --color-grey-l80: 237 237 237;
+  --color-grey-l60: 218 218 218;
+  --color-grey-l40: 200 200 200;
+  --color-grey-l20: 181 181 181;
+  --color-grey-main: 163 163 163;
+  --color-grey-d20: 130 130 130;
+  --color-grey-d40: 98 98 98;
+  --color-grey-d60: 65 65 65;
+  --color-grey-d80: 33 33 33;
+  --color-grey-d100: 0 0 0;
 }
