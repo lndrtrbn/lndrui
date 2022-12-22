@@ -1,0 +1,7 @@
+@import "./reset.css";
+@import "./design-system.css";
+@import "./base.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
