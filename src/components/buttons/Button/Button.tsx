@@ -1,6 +1,6 @@
 import { ReactNode } from "react"
 
-import "./Button.module.css"
+import { ButtonColor, ButtonVariant, theme } from "./Button.theme"
 
 export type ButtonProps = {
   /**
@@ -10,7 +10,11 @@ export type ButtonProps = {
   /**
    * The style of the button
    */
-  variant?: "primary" | "secondary" | "danger"
+  variant?: ButtonVariant
+  /**
+   * The color of the button
+   */
+  color?: ButtonColor
   /**
    * Callback on button click
    */
@@ -20,22 +24,14 @@ export type ButtonProps = {
 /**
  * Just a simple Button component
  */
-export default function Button({ children, variant = "primary", onClick }: ButtonProps) {
-  const classnames = [
-    `bg-${variant}`,
-    `hover:bg-${variant}-dark`,
-    "px-24",
-    "py-8",
-    "rounded",
-    "active:outline",
-    "outline-offset-4",
-    "outline-2",
-    `outline-${variant}-dark"`,
-    "font-bold",
-  ].join(" ")
-
+export default function Button({
+  children,
+  variant = "plain",
+  color = "primary",
+  onClick,
+}: ButtonProps) {
   return (
-    <button className={classnames} onClick={onClick}>
+    <button className={theme(color, variant)} onClick={onClick}>
       {children}
     </button>
   )

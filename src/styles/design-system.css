@@ -27,6 +27,18 @@
   --color-ocean-d80: 16 20 45;
   --color-ocean-d100: 0 0 0;
 
+  --color-red-l100: 255 255 255;
+  --color-red-l80: 253 218 218;
+  --color-red-l60: 251 181 180;
+  --color-red-l40: 249 145 143;
+  --color-red-l20: 247 108 105;
+  --color-red-main: 245 71 68;
+  --color-red-d20: 196 57 54;
+  --color-red-d40: 147 43 41;
+  --color-red-d60: 98 28 27;
+  --color-red-d80: 49 14 14;
+  --color-red-d100: 0 0 0;
+
   --color-grey-l100: 255 255 255;
   --color-grey-l80: 237 237 237;
   --color-grey-l60: 218 218 218;

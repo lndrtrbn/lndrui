@@ -8,19 +8,36 @@ export default {
 
 const Template: Story<ButtonProps> = (args) => <Button {...args} />
 
-export const Primary = Template.bind({})
-Primary.args = {
+export const Default = Template.bind({})
+Default.args = {
   children: "Click me!",
 }
 
-export const Secondary = Template.bind({})
-Secondary.args = {
-  ...Primary.args,
-  variant: "secondary",
-}
+const VariantsTemplate: Story<ButtonProps> = () => (
+  <>
+    <div className="flex gap-x-16">
+      <Button variant="plain" color="primary">
+        Primary
+      </Button>
+      <Button variant="plain" color="secondary">
+        Secondary
+      </Button>
+      <Button variant="plain" color="danger">
+        Danger
+      </Button>
+    </div>
+    <div className="flex gap-x-16 mt-16">
+      <Button variant="link" color="primary">
+        Primary
+      </Button>
+      <Button variant="link" color="secondary">
+        Secondary
+      </Button>
+      <Button variant="link" color="danger">
+        Danger
+      </Button>
+    </div>
+  </>
+)
 
-export const Danger = Template.bind({})
-Danger.args = {
-  ...Primary.args,
-  variant: "danger",
-}
+export const AllVariants = VariantsTemplate.bind({})

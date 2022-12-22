@@ -1,26 +1,28 @@
 @layer base {
   :root {
-    --color-primary: var(--color-brick-main);
-    --color-primary-dark: var(--color-brick-d20);
-    --color-primary-darker: var(--color-brick-d40);
-    --color-primary-light: var(--color-brick-l20);
-    --color-primary-lighter: var(--color-brick-l40);
+    --color-primary: var(--color-ocean-main);
+    --color-primary-alt1: var(--color-ocean-d20);
+    --color-primary-alt2: var(--color-ocean-d40);
+    --color-primary-alt3: var(--color-ocean-l80);
 
-    --color-secondary: var(--color-ocean-main);
-    --color-secondary-dark: var(--color-ocean-d20);
-    --color-secondary-darker: var(--color-ocean-d40);
-    --color-secondary-light: var(--color-ocean-l20);
-    --color-secondary-lighter: var(--color-ocean-l40);
+    --color-secondary: var(--color-brick-main);
+    --color-secondary-alt1: var(--color-brick-d20);
+    --color-secondary-alt2: var(--color-brick-d40);
+    --color-secondary-alt3: var(--color-brick-l80);
+
+    --color-danger: var(--color-red-main);
+    --color-danger-alt1: var(--color-red-d20);
+    --color-danger-alt2: var(--color-red-d40);
+    --color-danger-alt3: var(--color-red-l80);
 
     --color-neutral: var(--color-grey-main);
-    --color-neutral-dark: var(--color-grey-d20);
-    --color-neutral-darker: var(--color-grey-d40);
-    --color-neutral-light: var(--color-grey-l20);
-    --color-neutral-lighter: var(--color-grey-l40);
+    --color-neutral-alt1: var(--color-grey-d20);
+    --color-neutral-alt2: var(--color-grey-d40);
+    --color-neutral-alt3: var(--color-grey-l80);
 
     --color-background: var(--color-grey-l80);
 
     --color-font: var(--color-grey-d80);
-    --color-font-invert: var(--color-grey-l80);
+    --color-font-invert: var(--color-grey-l100);
   }
 }
