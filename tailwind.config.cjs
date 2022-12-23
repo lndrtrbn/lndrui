@@ -21,6 +21,7 @@ module.exports = {
       "danger-alt2": "rgb(var(--color-danger-alt2) / <alpha-value>)",
       "danger-alt3": "rgb(var(--color-danger-alt3) / <alpha-value>)",
       background: "rgb(var(--color-background) / <alpha-value>)",
+      "background-alt": "rgb(var(--color-background-alt) / <alpha-value>)",
       font: "rgb(var(--color-font) / <alpha-value>)",
       "font-invert": "rgb(var(--color-font-invert) / <alpha-value>)",
     },
@@ -36,6 +37,8 @@ module.exports = {
       64: "64px",
       80: "80px",
       96: "96px",
+      112: "112px",
+      128: "128px"
     },
   },
   plugins: [],

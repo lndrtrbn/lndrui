@@ -25,6 +25,9 @@ const VariantsTemplate: Story<ButtonProps> = () => (
       <Button variant="plain" color="danger">
         Danger
       </Button>
+      <Button variant="plain" disabled>
+        Disabled
+      </Button>
     </div>
     <div className="flex gap-x-16 mt-16">
       <Button variant="link" color="primary">
@@ -35,6 +38,9 @@ const VariantsTemplate: Story<ButtonProps> = () => (
       </Button>
       <Button variant="link" color="danger">
         Danger
+      </Button>
+      <Button variant="link" disabled>
+        Disabled
       </Button>
     </div>
   </>

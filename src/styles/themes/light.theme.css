@@ -1,5 +1,5 @@
 @layer base {
-  :root {
+  [data-theme="light"] {
     --color-primary: var(--color-ocean-main);
     --color-primary-alt1: var(--color-ocean-d20);
     --color-primary-alt2: var(--color-ocean-d40);
@@ -20,7 +20,8 @@
     --color-neutral-alt2: var(--color-grey-d40);
     --color-neutral-alt3: var(--color-grey-l80);
 
-    --color-background: var(--color-grey-l80);
+    --color-background: var(--color-grey-l90);
+    --color-background-alt: var(--color-grey-l100);
 
     --color-font: var(--color-grey-d80);
     --color-font-invert: var(--color-grey-l100);

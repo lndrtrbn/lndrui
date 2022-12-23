@@ -1,0 +1,11 @@
+.buttonGroup > *:not(:first-child):not(:last-child) {
+  @apply rounded-none;
+}
+
+.buttonGroup > *:first-child {
+  @apply rounded-r-none;
+}
+
+.buttonGroup > *:last-child {
+  @apply rounded-l-none;
+}
