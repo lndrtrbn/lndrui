@@ -16,15 +16,15 @@ export default function ButtonGroup({
   children,
   stacked = true,
 }: ButtonGroupProps) {
-  const classes = classNames(
-    stacked && styles.buttonGroup,
-    buttonGroupStyle.base,
-    stacked && buttonGroupStyle.stacked,
-    !stacked && buttonGroupStyle.spaced
-  )
-
   return (
-    <div className={classes}>
+    <div
+      className={classNames(
+        stacked && styles.buttonGroup,
+        buttonGroupStyle.base,
+        stacked && buttonGroupStyle.stacked,
+        !stacked && buttonGroupStyle.spaced
+      )}
+    >
       <>{children}</>
     </div>
   )

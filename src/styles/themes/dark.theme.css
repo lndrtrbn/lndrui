@@ -1,25 +1,24 @@
 @layer base {
   [data-theme="dark"] {
     --color-primary: var(--color-ocean-main);
-    --color-primary-alt1: var(--color-ocean-l20);
-    --color-primary-alt2: var(--color-ocean-l40);
+    --color-primary-accent: var(--color-ocean-l20);
 
     --color-secondary: var(--color-brick-main);
-    --color-secondary-alt1: var(--color-brick-l20);
-    --color-secondary-alt2: var(--color-brick-l40);
+    --color-secondary-accent: var(--color-brick-l20);
 
     --color-danger: var(--color-red-main);
-    --color-danger-alt1: var(--color-red-l20);
-    --color-danger-alt2: var(--color-red-l40);
+    --color-danger-accent: var(--color-red-l20);
 
-    --color-neutral: var(--color-grey-main);
-    --color-neutral-alt1: var(--color-grey-l20);
-    --color-neutral-alt2: var(--color-grey-l40);
+    --color-grey: var(--color-grey-main);
+    --color-grey-accent: var(--color-grey-l20);
+
+    --color-neutral: var(--color-ocean-d20);
+    --color-neutral-accent: var(--color-ocean-main);
 
     --color-background: var(--color-ocean-d80);
-    --color-background-alt: var(--color-ocean-d70);
+    --color-background-accent: var(--color-ocean-d70);
 
-    --color-font: var(--color-grey-l70);
-    --color-font-invert: var(--color-grey-d100);
+    --color-font: var(--color-grey-l100);
+    --color-font-invert: var(--color-grey-d80);
   }
 }

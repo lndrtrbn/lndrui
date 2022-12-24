@@ -23,24 +23,22 @@ export default function InputText({
   disabled = false,
   onChange,
 }: InputTextProps) {
-  const classes = classNames(
-    inputTextStyle.base,
-    !inError && inputTextStyle.color,
-    disabled && inputTextStyle.disabled.input,
-    inError && inputTextStyle.inError
-  )
-
-  const containerClasses = classNames(
-    inputTextStyle.container,
-    disabled && inputTextStyle.disabled.container
-  )
-
   return (
-    <label className={containerClasses}>
+    <label
+      className={classNames(
+        inputTextStyle.container,
+        disabled && inputTextStyle.disabled.container
+      )}
+    >
       {label && <span className={inputTextStyle.label}>{label}</span>}
       <input
         type={type}
-        className={classes}
+        className={classNames(
+          inputTextStyle.base,
+          !inError && inputTextStyle.color,
+          disabled && inputTextStyle.disabled.input,
+          inError && inputTextStyle.inError
+        )}
         placeholder={placeholder}
         value={value}
         onChange={(e) => onChange?.(e.target.value)}

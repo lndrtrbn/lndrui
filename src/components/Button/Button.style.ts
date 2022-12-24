@@ -15,14 +15,14 @@ const buttonStyle: ButtonStyle = {
   disabled: "pointer-events-none opacity-50",
   variants: {
     plain: {
-      primary: "bg-primary hover:bg-primary-alt1 outline-primary/30",
-      secondary: "bg-secondary hover:bg-secondary-alt1 outline-secondary/30",
-      danger: "bg-danger hover:bg-danger-alt1 outline-danger/30",
+      primary: "bg-primary hover:bg-primary-accent outline-primary/30",
+      secondary: "bg-secondary hover:bg-secondary-accent outline-secondary/30",
+      danger: "bg-danger hover:bg-danger-accent outline-danger/30",
     },
     link: {
-      primary: "outline-2 bg-transparent text-primary hover:bg-primary/20 hover:text-primary-alt1 outline-primary/60",
-      secondary: "outline-2 bg-transparent text-secondary hover:bg-secondary/20 hover:text-secondary-alt1 outline-secondary/60",
-      danger: "outline-2 bg-transparent text-danger hover:bg-danger/20 hover:text-danger-alt1 outline-danger/60",
+      primary: "outline-2 bg-transparent text-primary hover:bg-primary/20 hover:text-primary-accent outline-primary/60",
+      secondary: "outline-2 bg-transparent text-secondary hover:bg-secondary/20 hover:text-secondary-accent outline-secondary/60",
+      danger: "outline-2 bg-transparent text-danger hover:bg-danger/20 hover:text-danger-accent outline-danger/60",
     },
   }
 }

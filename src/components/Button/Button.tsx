@@ -24,14 +24,16 @@ export default function Button({
   disabled = false,
   onClick,
 }: ButtonProps) {
-  const classes = classNames(
-    buttonStyle.base,
-    disabled && buttonStyle.disabled,
-    buttonStyle.variants[variant][color]
-  )
-
   return (
-    <button className={classes} onClick={onClick} disabled={disabled}>
+    <button
+      className={classNames(
+        buttonStyle.base,
+        disabled && buttonStyle.disabled,
+        buttonStyle.variants[variant][color]
+      )}
+      onClick={onClick}
+      disabled={disabled}
+    >
       {children}
     </button>
   )
