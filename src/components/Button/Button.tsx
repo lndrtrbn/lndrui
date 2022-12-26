@@ -1,15 +1,13 @@
 import classNames from "classnames"
 import { ReactNode } from "react"
 
-import buttonStyle, {
-  ButtonColor,
-  ButtonVariant,
-} from "./Button.style"
+import { Color } from "../../utils/color.type"
+import style, { ButtonVariant } from "./Button.style"
 
 export type ButtonProps = {
   children: ReactNode
   variant?: ButtonVariant
-  color?: ButtonColor
+  color?: Color
   disabled?: boolean
   asIcon?: boolean
   onClick?: () => void
@@ -29,10 +27,10 @@ export default function Button({
   return (
     <button
       className={classNames(
-        buttonStyle.base,
-        disabled && buttonStyle.disabled,
-        asIcon && buttonStyle.asIcon,
-        buttonStyle.variants[variant][color]
+        style.base,
+        disabled && style.disabled,
+        asIcon && style.asIcon,
+        style.variants[variant][color]
       )}
       onClick={onClick}
       disabled={disabled}

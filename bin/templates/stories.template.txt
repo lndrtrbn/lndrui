@@ -1,0 +1,15 @@
+import { Meta, Story } from "@storybook/react"
+
+import [component], { [component]Props } from "./[component]"
+
+export default {
+  title: "[component]",
+  component: [component],
+} as Meta
+
+const Template: Story<[component]Props> = (args) => <[component] {...args} />
+
+export const Default = Template.bind({})
+Default.args = {
+  children: "[component]",
+}

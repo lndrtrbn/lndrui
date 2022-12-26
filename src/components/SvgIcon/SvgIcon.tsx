@@ -2,13 +2,17 @@ import { SvgName, useSvgImport } from "./useSvgImport"
 
 type SvgSize = 12 | 16 | 20 | 24 | 28 | 32
 
-type Props = {
+export type SvgIconProps = {
   name: SvgName
   style?: string
   size?: SvgSize
 }
 
-export default function SvgIcon({ name, style, size = 16 }: Props) {
+export default function SvgIcon({
+  name,
+  style,
+  size = 24,
+}: SvgIconProps) {
   const { loading, Svg } = useSvgImport(name)
 
   return (

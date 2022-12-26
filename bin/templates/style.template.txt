@@ -1,0 +1,9 @@
+type [component]Style = {
+  base: string
+}
+
+const style: [component]Style = {
+  base: "",
+}
+
+export default style

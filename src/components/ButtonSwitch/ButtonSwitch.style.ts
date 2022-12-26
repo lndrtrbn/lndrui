@@ -1,17 +1,17 @@
-export type ButtonSwitchColor = "primary" | "secondary" | "danger"
+import { Color } from "../../utils/color.type"
 
 type ButtonSwitchStyle = {
   container: string
   disabled: string
   switch: {
     base: string
-    active: Record<ButtonSwitchColor, string>
+    active: Record<Color, string>
     inactive: string
   }
   switchValue: {
     base: string
-    active: Record<ButtonSwitchColor, string>
-    inactive: Record<ButtonSwitchColor, string>
+    active: Record<Color, string>
+    inactive: Record<Color, string>
   }
 }
 

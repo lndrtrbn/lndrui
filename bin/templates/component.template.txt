@@ -1,0 +1,25 @@
+import classNames from "classnames"
+import { ReactNode } from "react"
+
+import style from "./[component].style"
+
+export type [component]Props = {
+  children?: ReactNode
+}
+
+/**
+ * TODO: Component documentation
+ */
+export default function [component]({
+  children
+}: [component]Props) {
+  return (
+    <div
+      className={classNames(
+        style.base,
+      )}
+    >
+      {children}
+    </div>
+  )
+}

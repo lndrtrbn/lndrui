@@ -1,7 +1,8 @@
-export type ButtonColor = "primary" | "secondary" | "danger"
+import { Color } from "../../utils/color.type"
+
 export type ButtonVariant = "plain" | "link"
 
-type ButtonColorStyles = Record<ButtonColor,string>
+type ButtonColorStyles = Record<Color,string>
 type ButtonVariantStyles = Record<ButtonVariant, ButtonColorStyles>
 
 type ButtonStyle = {
@@ -11,7 +12,7 @@ type ButtonStyle = {
   variants: ButtonVariantStyles
 }
 
-const buttonStyle: ButtonStyle = {
+const style: ButtonStyle = {
   base: "px-24 h-40 rounded active:outline outline-4 font-bold text-font-invert fill-font-invert flex justify-center items-center gap-8",
   disabled: "pointer-events-none opacity-50",
   asIcon: "w-40 px-0",
@@ -29,4 +30,4 @@ const buttonStyle: ButtonStyle = {
   }
 }
 
-export default buttonStyle
+export default style

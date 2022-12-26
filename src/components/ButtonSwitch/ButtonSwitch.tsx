@@ -1,13 +1,12 @@
 import classNames from "classnames"
 
-import buttonSwitchStyle, {
-  ButtonSwitchColor,
-} from "./ButtonSwitch.style"
+import { Color } from "../../utils/color.type"
+import buttonSwitchStyle from "./ButtonSwitch.style"
 
 export type ButtonSwitchProps = {
   leftLabel?: string
   rightLabel?: string
-  color?: ButtonSwitchColor
+  color?: Color
   disabled?: boolean
   value?: boolean
   onChange?: (val: boolean) => void
