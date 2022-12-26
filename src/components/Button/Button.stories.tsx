@@ -1,4 +1,6 @@
 import { Meta, Story } from "@storybook/react"
+
+import SvgIcon from "../SvgIcon/SvgIcon"
 import Button, { ButtonProps } from "./Button"
 
 export default {
@@ -11,6 +13,22 @@ const Template: Story<ButtonProps> = (args) => <Button {...args} />
 export const Default = Template.bind({})
 Default.args = {
   children: "Click me!",
+}
+
+export const AsIconButton = Template.bind({})
+AsIconButton.args = {
+  asIcon: true,
+  children: <SvgIcon name="boussole" size={24} />,
+}
+
+export const WithIcon = Template.bind({})
+WithIcon.args = {
+  children: (
+    <>
+      <SvgIcon name="boussole" size={24} />
+      Where am I
+    </>
+  ),
 }
 
 const VariantsTemplate: Story<ButtonProps> = () => (

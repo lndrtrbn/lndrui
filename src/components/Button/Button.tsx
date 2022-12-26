@@ -11,6 +11,7 @@ export type ButtonProps = {
   variant?: ButtonVariant
   color?: ButtonColor
   disabled?: boolean
+  asIcon?: boolean
   onClick?: () => void
 }
 
@@ -22,6 +23,7 @@ export default function Button({
   variant = "plain",
   color = "primary",
   disabled = false,
+  asIcon = false,
   onClick,
 }: ButtonProps) {
   return (
@@ -29,6 +31,7 @@ export default function Button({
       className={classNames(
         buttonStyle.base,
         disabled && buttonStyle.disabled,
+        asIcon && buttonStyle.asIcon,
         buttonStyle.variants[variant][color]
       )}
       onClick={onClick}
