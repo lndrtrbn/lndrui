@@ -6,6 +6,13 @@ import Badge, { BadgeProps } from "./Badge"
 export default {
   title: "Data Display/Badge",
   component: Badge,
+  argTypes: {
+    children: {
+      table: {
+        disable: true,
+      },
+    },
+  },
 } as Meta
 
 const Template: Story<BadgeProps> = (args) => <Badge {...args} />
@@ -51,3 +58,6 @@ const VariantsTemplate: Story<BadgeProps> = () => (
 )
 
 export const AllVariants = VariantsTemplate.bind({})
+AllVariants.parameters = {
+  controls: { hideNoControlsWarning: true },
+}

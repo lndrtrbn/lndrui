@@ -1,7 +1,7 @@
-import classNames from "classnames"
+import { twMerge } from "tailwind-merge"
 
 import { Color } from "../../utils/color.type"
-import buttonSwitchStyle from "./ButtonSwitch.style"
+import style from "./ButtonSwitch.style"
 
 export type ButtonSwitchProps = {
   leftLabel?: string
@@ -25,25 +25,20 @@ export default function ButtonSwitch({
 }: ButtonSwitchProps) {
   return (
     <div
-      className={classNames(
-        buttonSwitchStyle.container,
-        disabled && buttonSwitchStyle.disabled
-      )}
+      className={twMerge(style.container, disabled && style.disabled)}
     >
       {leftLabel && <span>{leftLabel}</span>}
       <div
-        className={classNames(
-          buttonSwitchStyle.switch.base,
-          value && buttonSwitchStyle.switch.active[color],
-          !value && buttonSwitchStyle.switch.inactive
+        className={twMerge(
+          style.switch.base,
+          value && style.switch.active[color],
+          !value && style.switch.inactive
         )}
       >
         <button
-          className={classNames(
-            buttonSwitchStyle.switchValue.base,
-            buttonSwitchStyle.switchValue[
-              value ? "active" : "inactive"
-            ][color]
+          className={twMerge(
+            style.switchValue.base,
+            style.switchValue[value ? "active" : "inactive"][color]
           )}
           onClick={() => onChange?.(!value)}
           disabled={disabled}

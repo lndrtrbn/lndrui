@@ -15,12 +15,12 @@ export const globalTypes = {
     name: "Theme",
     defaultValue: "light",
     toolbar: {
+      title: "Theme",
       icon: "circlehollow",
       items: [
         { value: "light", icon: "circlehollow", title: "light" },
         { value: "dark", icon: "circle", title: "dark" },
       ],
-      showName: true,
     },
   },
 }

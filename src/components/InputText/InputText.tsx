@@ -1,5 +1,6 @@
-import classNames from "classnames"
-import inputTextStyle from "./InputText.style"
+import { twMerge } from "tailwind-merge"
+
+import style from "./InputText.style"
 
 export type InputTextProps = {
   value?: string
@@ -25,19 +26,19 @@ export default function InputText({
 }: InputTextProps) {
   return (
     <label
-      className={classNames(
-        inputTextStyle.container,
-        disabled && inputTextStyle.disabled.container
+      className={twMerge(
+        style.container,
+        disabled && style.disabled.container
       )}
     >
-      {label && <span className={inputTextStyle.label}>{label}</span>}
+      {label && <span className={style.label}>{label}</span>}
       <input
         type={type}
-        className={classNames(
-          inputTextStyle.base,
-          !inError && inputTextStyle.color,
-          disabled && inputTextStyle.disabled.input,
-          inError && inputTextStyle.inError
+        className={twMerge(
+          style.base,
+          !inError && style.color,
+          disabled && style.disabled.input,
+          inError && style.inError
         )}
         placeholder={placeholder}
         value={value}

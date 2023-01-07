@@ -1,5 +1,5 @@
-import classNames from "classnames"
 import { ReactNode } from "react"
+import { twMerge } from "tailwind-merge"
 
 import { Color } from "../../utils/color.type"
 import style, { ButtonVariant } from "./Button.style"
@@ -26,8 +26,9 @@ export default function Button({
 }: ButtonProps) {
   return (
     <button
-      className={classNames(
+      className={twMerge(
         style.base,
+        style.text,
         disabled && style.disabled,
         asIcon && style.asIcon,
         style.variants[variant][color]

@@ -4,10 +4,10 @@ type ButtonGroupStyle = {
   stacked: string
 }
 
-const buttonGroupStyle: ButtonGroupStyle = {
+const style: ButtonGroupStyle = {
   base: "flex",
   spaced: "gap-16",
   stacked: "gap-4"
 }
 
-export default buttonGroupStyle
+export default style

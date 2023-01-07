@@ -1,5 +1,5 @@
-import classNames from "classnames"
 import { ReactNode } from "react"
+import { twMerge } from "tailwind-merge"
 
 import { Color } from "../../utils/color.type"
 import style from "./Badge.style"
@@ -26,10 +26,16 @@ export default function Badge({
       : `${value}`
 
   return (
-    <div className={classNames(style.container)}>
-      <div className={classNames(style.base, style.colors[color])}>
+    <div className={twMerge(style.container)}>
+      <div
+        className={twMerge(
+          style.positioning,
+          style.colors[color],
+          style.base
+        )}
+      >
         {(value || value === 0) && (
-          <span className={classNames(style.wrapper)}>{label}</span>
+          <span className={twMerge(style.wrapper)}>{label}</span>
         )}
       </div>
       {children}

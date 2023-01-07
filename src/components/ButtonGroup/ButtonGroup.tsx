@@ -1,8 +1,8 @@
-import classNames from "classnames"
 import { ReactNode } from "react"
 
-import buttonGroupStyle from "./ButtonGroup.style"
+import style from "./ButtonGroup.style"
 import styles from "./ButtonGroup.module.css"
+import { twMerge } from "tailwind-merge"
 
 export type ButtonGroupProps = {
   children: ReactNode
@@ -18,11 +18,11 @@ export default function ButtonGroup({
 }: ButtonGroupProps) {
   return (
     <div
-      className={classNames(
+      className={twMerge(
         stacked && styles.buttonGroup,
-        buttonGroupStyle.base,
-        stacked && buttonGroupStyle.stacked,
-        !stacked && buttonGroupStyle.spaced
+        style.base,
+        stacked && style.stacked,
+        !stacked && style.spaced
       )}
     >
       <>{children}</>

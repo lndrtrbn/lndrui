@@ -10,7 +10,7 @@ type InputTextStyle = {
   label: string
 }
 
-const inputTextStyle: InputTextStyle = {
+const style: InputTextStyle = {
   base: "px-16 h-40 border-2 rounded focus:outline outline-4 outline-primary/30",
   color: "bg-background-accent border-neutral/30 hover:border-primary focus:border-primary",
   container: "flex flex-col gap-8",
@@ -22,4 +22,4 @@ const inputTextStyle: InputTextStyle = {
   label: "font-bold"
 }
 
-export default inputTextStyle
+export default style

@@ -15,7 +15,7 @@ type ButtonSwitchStyle = {
   }
 }
 
-const buttonSwitchStyle: ButtonSwitchStyle = {
+const style: ButtonSwitchStyle = {
   container: "flex gap-8 items-center",
   disabled: "pointer-events-none opacity-50",
   switch: {
@@ -42,4 +42,4 @@ const buttonSwitchStyle: ButtonSwitchStyle = {
   }
 }
 
-export default buttonSwitchStyle
+export default style
