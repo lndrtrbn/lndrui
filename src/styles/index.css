@@ -1,9 +1,13 @@
 @import "./reset.css";
-@import "./design-system.css";
-@import "./themes/light.theme.css";
-@import "./themes/dark.theme.css";
-@import "./base.css";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    font-size: 14px;
+    @apply text-font;
+  }
+}

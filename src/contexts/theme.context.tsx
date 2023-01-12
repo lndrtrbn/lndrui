@@ -31,7 +31,7 @@ const ThemeProvider = ({
   )
 
   return (
-    <div data-theme={theme}>
+    <div className={theme} data-theme={theme}>
       <ThemeContext.Provider value={value}>
         {children}
       </ThemeContext.Provider>

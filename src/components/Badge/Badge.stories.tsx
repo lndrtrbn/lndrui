@@ -1,6 +1,6 @@
 import { Meta, Story } from "@storybook/react"
-import Button from "../Button/Button"
 
+import Button from "../Button/Button"
 import Badge, { BadgeProps } from "./Badge"
 
 export default {

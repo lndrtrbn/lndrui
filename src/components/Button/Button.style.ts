@@ -20,7 +20,7 @@ const style: ButtonStyle = {
   text: "font-bold text-font-invert fill-font-invert",
   variants: {
     plain: {
-      primary: "bg-primary hover:bg-primary-accent outline-primary/30",
+      primary: "bg-primary hover:bg-primary-accent outline-primary/30 dark:bg-danger",
       secondary: "bg-secondary hover:bg-secondary-accent outline-secondary/30",
       danger: "bg-danger hover:bg-danger-accent outline-danger/30",
     },

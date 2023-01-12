@@ -1,5 +1,5 @@
-import classNames from "classnames"
 import { ReactNode } from "react"
+import { twMerge } from "tailwind-merge"
 
 import style from "./[component].style"
 
@@ -15,7 +15,7 @@ export default function [component]({
 }: [component]Props) {
   return (
     <div
-      className={classNames(
+      className={twMerge(
         style.base,
       )}
     >
