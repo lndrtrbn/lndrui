@@ -34,11 +34,8 @@ WithIcon.args = {
 const VariantsTemplate: Story<ButtonProps> = () => (
   <>
     <div className="flex gap-x-16">
-      <Button variant="plain" color="primary">
+      <Button variant="plain" color="default">
         Primary
-      </Button>
-      <Button variant="plain" color="secondary">
-        Secondary
       </Button>
       <Button variant="plain" color="danger">
         Danger
@@ -48,11 +45,8 @@ const VariantsTemplate: Story<ButtonProps> = () => (
       </Button>
     </div>
     <div className="flex gap-x-16 mt-16">
-      <Button variant="link" color="primary">
+      <Button variant="link" color="default">
         Primary
-      </Button>
-      <Button variant="link" color="secondary">
-        Secondary
       </Button>
       <Button variant="link" color="danger">
         Danger

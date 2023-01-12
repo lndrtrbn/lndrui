@@ -1,1 +1,1 @@
-export type Color = "primary" | "secondary" | "danger"
+export type Color = "default" | "danger"

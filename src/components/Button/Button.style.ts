@@ -15,19 +15,17 @@ type ButtonStyle = {
 
 const style: ButtonStyle = {
   base: "px-24 h-40 rounded active:outline outline-4 flex justify-center items-center gap-8",
-  disabled: "pointer-events-none opacity-50",
+  disabled: "pointer-events-none opacity-40",
   asIcon: "w-40 px-0",
   text: "font-bold text-font-invert fill-font-invert",
   variants: {
     plain: {
-      primary: "bg-primary hover:bg-primary-accent outline-primary/30 dark:bg-danger",
-      secondary: "bg-secondary hover:bg-secondary-accent outline-secondary/30",
-      danger: "bg-danger hover:bg-danger-accent outline-danger/30",
+      default: "bg-jg hover:bg-jg-d20 outline-jg/30",
+      danger: "bg-br hover:bg-br-d20 outline-br/30",
     },
     link: {
-      primary: "outline-2 bg-transparent text-primary fill-primary hover:bg-primary/20 hover:text-primary-accent hover:fill-primary-accent outline-primary/60",
-      secondary: "outline-2 bg-transparent text-secondary fill-secondary hover:bg-secondary/20 hover:text-secondary-accent hover:fill-secondary-accent outline-secondary/60",
-      danger: "outline-2 bg-transparent text-danger fill-danger hover:bg-danger/20 hover:text-danger-accent hover:fill-danger-accent outline-danger/60",
+      default: "outline-2 bg-transparent text-jg fill-jg hover:bg-jg/20 hover:text-jg-d20 hover:fill-jg-d20 outline-jg/60",
+      danger: "outline-2 bg-transparent text-br fill-br hover:bg-br/20 hover:text-br-d20 hover:fill-br-d20 outline-br/60",
     },
   }
 }

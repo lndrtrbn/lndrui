@@ -19,7 +19,7 @@ export type ButtonProps = {
 export default function Button({
   children,
   variant = "plain",
-  color = "primary",
+  color = "default",
   disabled = false,
   asIcon = false,
   onClick,

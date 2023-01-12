@@ -1,13 +1,13 @@
 import { neutral } from "./neutral"
-import { brickRed } from "./brickRed"
-import { jungleGreen } from "./jungleGreen"
-import { midnightBlue } from "./midnightBlue"
+import { br } from "./brickRed"
+import { jg } from "./jungleGreen"
+import { mb } from "./midnightBlue"
 
 export const colors = {
   neutral,
-  brickRed,
-  jungleGreen,
-  midnightBlue,
+  br,
+  jg,
+  mb,
 
   transparent: "transparent",
 

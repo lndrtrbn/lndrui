@@ -1,5 +1,6 @@
-import React, { CSSProperties, useEffect } from "react"
+import React, { useEffect } from "react"
 import { DecoratorFn } from "@storybook/react"
+import { twMerge } from "tailwind-merge"
 
 import { ThemeProvider, useThemeContext } from "../src/contexts"
 
@@ -33,12 +34,13 @@ const WithTheme: DecoratorFn = (Story, context) => {
       theme.set(context.globals.theme)
     }, [context.globals.theme])
 
-    const style: CSSProperties = {
-      background: "rgb(var(--color-background) / 1)",
-    }
-
     return (
-      <div className="story-container" style={style}>
+      <div
+        className={twMerge(
+          "story-container",
+          theme.get === "light" ? "bg-neutral-l90" : "bg-mb-d80"
+        )}
+      >
         <Story />
       </div>
     )

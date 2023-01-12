@@ -1,4 +1,4 @@
-export const brickRed = {
+export const br = {
   l100: "#ffffff",
   l90: "#f9ecee",
   l80: "#f2d9de",

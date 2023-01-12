@@ -1,4 +1,4 @@
-export const jungleGreen = {
+export const jg = {
   l100: "#ffffff",
   l90: "#eaf6f3",
   l80: "#d4ede6",
