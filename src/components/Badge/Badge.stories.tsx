@@ -20,14 +20,14 @@ const Template: Story<BadgeProps> = (args) => <Badge {...args} />
 export const Default = Template.bind({})
 Default.args = {
   value: 0,
-  color: "secondary",
+  color: "danger",
   children: <Button>Default</Button>,
 }
 
 export const MaxValue = Template.bind({})
 MaxValue.args = {
   color: "danger",
-  value: 102,
+  value: 1002,
   maxValue: 99,
   children: <Button>Max Value at 99</Button>,
 }
@@ -41,17 +41,14 @@ NoValue.args = {
 const VariantsTemplate: Story<BadgeProps> = () => (
   <>
     <div className="flex gap-x-16">
-      <Badge color="primary" value={8}>
-        <Button color="secondary">Primary</Button>
-      </Badge>
-      <Badge color="secondary" value={8}>
-        <Button color="primary">Secondary</Button>
-      </Badge>
       <Badge color="danger" value={8}>
-        <Button color="primary">Danger</Button>
+        <Button color="default">Default</Button>
+      </Badge>
+      <Badge color="default" value={18} maxValue={9}>
+        <Button color="danger">Danger</Button>
       </Badge>
       <Badge color="danger">
-        <Button color="primary">Notification</Button>
+        <Button color="default">Notification</Button>
       </Badge>
     </div>
   </>

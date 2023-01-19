@@ -18,7 +18,7 @@ export default function Badge({
   children,
   value,
   maxValue,
-  color = "primary",
+  color = "default",
 }: BadgeProps) {
   const label =
     maxValue && value && value > maxValue
@@ -31,7 +31,10 @@ export default function Badge({
         className={twMerge(
           style.positioning,
           style.colors[color],
-          style.base
+          style.base,
+          label.length === 2 && "w-24",
+          label.length === 3 && "w-24",
+          label.length === 4 && "w-32"
         )}
       >
         {(value || value === 0) && (

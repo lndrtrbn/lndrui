@@ -20,26 +20,16 @@ const VariantsTemplate: Story<ButtonSwitchProps> = () => (
   <>
     <div className="flex gap-x-16 items-center">
       <ButtonSwitch
-        leftLabel="Primary"
-        color="primary"
-        value={true}
-      />
-      <ButtonSwitch
-        leftLabel="Secondary"
-        color="secondary"
+        leftLabel="Default"
+        color="default"
         value={true}
       />
       <ButtonSwitch leftLabel="Danger" color="danger" value={true} />
     </div>
     <div className="flex gap-x-16 mt-16 items-center">
       <ButtonSwitch
-        leftLabel="Primary off"
-        color="primary"
-        value={false}
-      />
-      <ButtonSwitch
-        leftLabel="Secondary off"
-        color="secondary"
+        leftLabel="Default off"
+        color="default"
         value={false}
       />
       <ButtonSwitch
@@ -50,14 +40,8 @@ const VariantsTemplate: Story<ButtonSwitchProps> = () => (
     </div>
     <div className="flex gap-x-16 mt-16 items-center">
       <ButtonSwitch
-        leftLabel="Primary disabled"
-        color="primary"
-        value={true}
-        disabled={true}
-      />
-      <ButtonSwitch
-        leftLabel="Secondary disabled"
-        color="secondary"
+        leftLabel="Default disabled"
+        color="default"
         value={true}
         disabled={true}
       />

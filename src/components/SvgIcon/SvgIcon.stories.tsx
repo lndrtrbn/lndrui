@@ -24,5 +24,5 @@ export const CustomColor = Template.bind({})
 CustomColor.args = {
   name: "boussole",
   size: 32,
-  style: "fill-primary hover:fill-danger",
+  style: "fill-jg hover:fill-br",
 }

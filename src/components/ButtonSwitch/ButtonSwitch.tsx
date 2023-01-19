@@ -18,7 +18,7 @@ export type ButtonSwitchProps = {
 export default function ButtonSwitch({
   leftLabel,
   rightLabel,
-  color = "primary",
+  color = "default",
   disabled = false,
   value = false,
   onChange,

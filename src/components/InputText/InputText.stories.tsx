@@ -29,7 +29,7 @@ const VariantsTemplate: Story<InputTextProps> = () => (
     <div className="flex gap-x-16 items-end mt-16">
       <InputText label="Password" value="azerty" type="password" />
       <InputText value="aa" label="In error" inError />
-      <InputText label="Disabled" disabled />
+      <InputText label="Disabled" value="Disabled" disabled />
     </div>
   </>
 )

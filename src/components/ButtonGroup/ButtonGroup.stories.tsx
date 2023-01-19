@@ -45,8 +45,8 @@ const VariantsTemplate: Story<ButtonGroupProps> = () => (
     <ButtonGroup>
       <Button>Using</Button>
       <Button>Different</Button>
-      <Button color="secondary">Colors</Button>
-      <Button color="secondary">For</Button>
+      <Button>Colors</Button>
+      <Button color="danger">For</Button>
       <Button color="danger">Buttons</Button>
     </ButtonGroup>
     <ButtonGroup>
